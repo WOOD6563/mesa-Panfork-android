@@ -67,6 +67,8 @@ pan_arch(unsigned gpu_id)
         case 0x860:
         case 0x880:
                 return 5;
+        case 0xb8a3:
+                return 10;
         default:
                 return gpu_id >> 12;
         }
